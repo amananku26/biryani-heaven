@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Profile</title>
+    <link rel="icon" href="Images/41-413808_avengers-logo-png-transparent-background-avengers-logo-png.png" type="image/gif" sizes="16x16">
+    <link type="text/css" rel="stylesheet" href="style.css">
+    </link>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Assistant|Heebo&display=swap">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+        <script src="https://kit.fontawesome.com/74e6adde73.js" crossorigin="anonymous"></script>
+    <style>
+        video{
+            margin-top: 2%;
+            height: 60%;
+            width: 60%;
+
+        }
+    </style>
+</head>
+<body>
+
+    <nav class="navbar navbar-light fixed-top " style="background-color: rgba(100, 100, 100, 0.8);">
+        <div id="logo">
+            <a href="index.html"><img src="data:image/jpeg;base64,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" /></a>
+        </div>
+        <ul>
+            <li class="active mr-2" ><a href="index.html">Home</a></li>
+            <li><a href="index.html#About">About</a></li>
+            <li><a href=" index.html#Skills">Skills</a></li>
+            <li><a href=" index.html#projects">Projects</a></li>
+            <li><a href=" index.html#commits">Portfolio</a></li>
+        </ul>
+    </nav>
+
+    <div class="row">
+        <h2 class=" text-dark" style=" margin-left: 43%; margin-top: 7%;">Shopping
+            <swap class="text-primary">Cart</swap></h2>
+    </div>
+
+    <center><video controls autoplay src="Videos/shopping cart 3.mp4"></video></center>
+</body>
+</html>

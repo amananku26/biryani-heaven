@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biryani Heaven</title>
+    <link type="text/css" rel="stylesheet" href="style.css">
+    <link rel="icon" href="Images/41-413808_avengers-logo-png-transparent-background-avengers-logo-png.png"
+        type="image/gif" sizes="16x16">
+    </link>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Assistant|Heebo&display=swap">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/74e6adde73.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <!-- Home Page Starting -->
+    <div class="banner">
+        <!-- <nav class="navbar fixed-top navbar-expand-lg navbar-light">
+            <a class="navbar-brand h1" href="index.html">
+                <span class="navbar-img">
+                </span>
+            </a>
+            <button class="navbar-toggler bg-light" type="button" data-toggle="collapse"
+                data-target="#navbarCollapseContent" aria-controls="#navbarCollapseContent" aria-expanded="false"
+                aria-label="Toggle Navigation">
+                <span class="navbar-toggler-icon bg-light"></span>
+            </button>
+
+            <div class="collapse navbar-collapse bg-lg-light" id="navbarCollapseContent">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link text-light" href="index.html">Home</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link text-light" href="#About">About</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link text-light" href="#Skills">Skills</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link text-light" href="#projects">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-light" href="#commits">PortFolio</a>
+                    </li>
+
+                </ul>
+            </div>
+        </nav> -->
+
+
+        <!-- check 2 end -->
+        <!-- <nav class="topnav">
+            <div id="logo">
+                <a href="#"><img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBxAHBhMIBxMWFhQXFiIXGBgWFxYeHhgiGh0dGR8YGRUYHSggGB0lHRkZITEhJSktLi4uHSAzODMtNygtLisBCgoKBQUFDgUFDisZExkrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrK//AABEIAGMBLAMBIgACEQEDEQH/xAAcAAEBAAMBAQEBAAAAAAAAAAAABwIFBgQDAQj/xABDEAABAgQDAwYJCwIHAAAAAAABAAIDBAYRBQcSIUFREyIxYXGBFiMyN0JygpGxCBQVJFJzkqGjs8EzQxdiY4OTstL/xAAUAQEAAAAAAAAAAAAAAAAAAAAA/8QAFBEBAAAAAAAAAAAAAAAAAAAAAP/aAAwDAQACEQMRAD8AuKIiAiIgIiICIiAiIgIiICIiAiIgIiICIiAiIgIiICIiAiIgIiICIiAiIgIiICIiAiIgIiIC09VCcOBRBTZaJnZyeu2kc4XvcW8nV0rcIgk3JVn9uV90L/yukoVmOtnInhk6EYejmcnovqvtvpA2WXZkgbCskBERAREQEWJNjYrJAREQERfl9tkH6iIgIiICIsdW229BkiIgIiICLEmwuVkgIiICIiAiIgIiICIiAiIgIi887NMkZN83NGzGNL3HgGgkn3BBHc5K3dhFYSUpJk2lniPFA3l2wNP+2XfjVjlJhs3LMmZc3a9oc08Q4Ag+4qIUdTTq9wrFqhn2+MmiWQL25ugiILE7g5sNl+DXBddkZjhxOkPo+Z/qyruSIP2dpYe7nN9lBSEREBERBMc4KldTGIYZPQfRjPc4D0mhrWuH4XnvsVR5SZbOSrJmXIcx7Q5pG8OAIPuKkubuHCoq+wzAIhsHw4huN2oGx/TWwyNx18TCotM4lsjyjy2x+zci3suDh2FqCooiICllE1b4SZqzwgm8JkvycLrEOIAXD1nPcb8LLcZwVN4N0fE5A2jR/Ew7dI1DnO7m328S1cFlvghpPMyVkI1w+NIa3g7nOu8t7tFu5BeEREBERAURxavuRzshtDvq8P6o7hzyNTu6Jp28GKo1njgpymJjFn2uxh0g73HmtHe4juUYhUO6YyZiYxFBMy6J881elobdtr9bC6J3hB/QiLmMu6g8JKPl8Qcbv06InHWzmuJ7bauwrp0BERBzGZRLaCnXNNiIDj+S53KCvhVGG/R2Iu+twm7b/wB1osA8f5ugOHHbv2dFmb5v577h3wUdlqWjS9AyFb0xdszAa4xQPTa2I8arbyG7HDe3s2h/RKLmaDqyFWGBNn5aweObFh38h1to62npB3jrBXTIORzVLm5fzkSC4tc1gcCCQRpe03BHYtfkiXxMv4UzMuc90SJEcS4knY8s6T6q2maQvl9Pfcn4hePJlunLWTtwef1XoO2REQEREBERAREQFMs88adK03DwOS2xpuIIYA6S0EXA7XFjesEqmqNYO7w4zni4j0y8gNLOBc0loI7X63A8GhBTaUwZtPU7AwmF/bYATxcdrnd7i4qYSh8Cc7ny/ky8+LjgHPJI7+VDm9QerOpdnzgzpum4eNylxFlYmq46Q1xAJ7nBh6tqCootLR+Nio6agYsy3jGAuA3OGxze5wIW6QEREEsxA/PPlAy7ekQZQnsuIm39QLT1+x1B5my9XS48RMHTHA7A1+ziW6Xji5pW1pp3z7PjEZjdDlwwe6CD8HLsMwacFU0nGw0Aa7a4R4PbcjsvtaepxQdDCiCLDEWGQQRcEbwRcFfVTfI+oji1LfRs2fHSp5JwPTp26Ceyzm+yt5mbUngvSEadYbRXDk4XruBs4eqNTvZQT6YP+IucQgDnSkj08CWEX/FEAHW1i3VaH5nnThE2Nmtjof8A3bb9QLZZL039A0i2Zjjx0x419+kA+Q0+ydXa4rVZyH5nUuC4kPQmrE9RdDPwDkFWREQERfCZjtlZd0xHNmtaXOPANFyfcEEozfmHVFU0jQ8kfLeIsa24bQL9jBEdb1VVWSkNkkJJrRyYZo07tNtOnstsUoyhgvqWqp6t50bHP5KDe+wbCQPVYIbb9blYEEcymiml62n6KmTzdXKwb77AdHW6GWH2SrGo5nLAfT1TyNayQ8h4hxLb7XIB9Zhe3uCrkpMtnJVk1LG7HtD2niHAEH3FB90REHMZm+b+e+4d8F4cnRqy0kwfsv8A3Xr3Zm+b+e+4d8F4sm/NrJeq/wDdeg4GqMOi5VVc2pMDaTJRnaY0IdDbm5ZwA6XMO43HR02PCMTg4xhsOfkHB0OI3U0/wRuIOwjcdiYthsLF8OiSE+0OhxG6XA7+scCDtB3Hao3Tc/FyorA07jbiZGO7VCiHobc2D+rc143bD0dIUrM/zfz33Dv4Xlyd820l6jv3Hr05mm+X08W9HIH+F5snfNtJeo79x6Ds0REBERAREQEREHKZl1D4M0fHnmG0Qjk4XrvBAI9UXd7K1eS1P/QdFMjxhaJMHln3v0OHMH4bHtcVxmZc74Z5kylISx8VDieNsfSPOft4thtsOBLgrdDhiHDENgsALADdboAQfReXEpJmJYfEkZkXZEYWOHU4EH4r1IgjmSM8/B8WnaLxA86FEL4fXYhr7dRGhw7SVY1Dc1nGkMypOq5UbIg8YB6XJ2Y8d8N7R2hWqUmWTkqyaljqY9oc0jeHAEEdxQehEXkxScbh+GRZ2KbCGxzz7IJ/hBLcoIn0hX2NYjuMXSOwviW/JgVdUY+TgTElJ+PE8p0Rl/c83/MqzoIvibPAHOOHPt5srPbHcA55AdfsiaX9QcV+1reu81ZamIe2XlefH4bnPB7tEPqLiuvzbprwjo+I2XF40HxsO3SdIN2j1m3AHGy02RmAvlsDiVDiJJjzbtWp206ATYk8XOLndY0oKc1oaLN6FKvlEsLKYlptnSyaH5sefi0KsKZ/KBZqoG53TDCPc4fygosnHEzKMmGdD2hw9oA/yvuuYy2n/pKhZKYvfxLWHthjkzfvaunQFNM88fOGUsMJlf6s27kwB06QRqsOu7W+0VSibC5UNw+ZGYGdQmBzpaUBczgRDIAcOOqK4O7AEFTofAhTdLy+Ft6WMBf1vdznH8RI7LLoERBzteYCKkpSYwy3Ocy7Op7ec38wB2ErlMiMfOJ0ocLmD4yVdosenQ4kt9xDm+yFTVCDNNoHO54cdMvNbXcBypuHHgGxQewXQXdERByuaB05fTx/0SPfYLyZNG+Wsn2P/demcUwJfLicJO1zWtHtPaLe668+SEURMt5YDpa6I0/8jjb3EIO9XNV3SkKr8Cdh8zYPHOhRLbWO3H1T0Ebx12XSoggMnVEaTozEKHqfmzEGA4Qi702tAOgH0iBtad7ezbS8nfNtJeo79x61ebtBCqsMM/hzfrcIc2391ouTDPXvaeOzfs2mULSzLmTY8EENdcHqivuLIOzREQEREBERAREQfMQwDqAC+iIgIiIMHNDvKF1+gWFgskQFiRcWKyRBg1ob5Iss0RAX4BYWC/UQFi4Bws4LJEGLQGiwCyREBYNYGm4AWaICIiAsCwO2uAPuWaICIiDFwDhZwRoDRZoWSICIiAvlDhiE3TDAAvfZ1kk/mSV9UQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQf//Z" /></a>
+            </div>
+            <ul>
+                <li class="active mr-2"><a href="#">Home</a></li>
+                <li><a href="#About">About</a></li>
+                <li><a href="#Skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#commits">Portfolio</a></li>
+            </ul>
+        </nav> -->
+
+        <div class="cont mt-1 pt-5">
+            <img src="Images\16054240827156.png" alt="">
+            <h4 class="mb-3">A Unit of Abhishek Anand Food Chain</h4>
+            <a href="#About"><button class="btn btn-outline-light mr-4 ">Scroll Down<i
+                        class="fas fa-arrow-down ml-2"></i></button></a>
+        </div>
+        <!-- Social Media References -->
+
+        <!-- <div class="social-media">
+            <ul>
+                <a href="https://www.linkedin.com/in/amananku26/">
+                    <li><img src="..\social_media\linkedin.png" alt="linkdin"></li>
+                </a>
+                <a href="https://twitter.com/amananku26">
+                    <li><img src="..\social_media\twitter.png" alt="twitter"></li>
+                </a>
+                <a href="https://www.hackerrank.com/amananku26">
+                    <li><img src="..\social_media\HackerRank.png" alt="Hackerrank" class="rounded"></li>
+                </a>
+                <a href="https://github.com/amananku26">
+                    <li><img src="..\social_media\github.png" alt="github" class="rounded"></li>
+                </a>
+            </ul>
+        </div> -->
+    </div>
+
+    <!-- About part starting  -->
+    <a name="About"></a>
+    <div class="about-area section-padding bg-muted mt-6 p-5 mb-5" id="about">
+        <div class="container ">
+            <div class="row">
+                <div class="col-md-4 col-sm-12 ">
+                    <div class="stack">
+                        <img src="Images\pp.jpg" alt="about image">
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-12 col-lg-7 col-md-offset-1  ml-5">
+                    <div class="about-right">
+                        <h2>Address</h2>
+                        <p>
+                            Ramesh Jha Mahila College,<br>
+                            Bir Kuwar singh Chowkr,
+                            Naya Bazar
+                            Saharsa, Bihar 852202
+                        </p>
+                        <div class="row">
+                            <div class="col-sm-6">
+                                <ul class="about-list">
+                                    <li> <span class="title">Owner</span> <span class="value">Abhishek Anand</span> </li>
+                                    <br />
+                                    <li> <span class="title">Contact</span> <span class="value">+698536971122</span> </li>
+                                    <li> <span class="title">Email</span> <span
+                                            class="value">abhishekananad@gmail.com</span> </li>
+                                </ul>
+                            </div>
+                            <!-- <div class="col-sm-6">
+                                <ul class="about-list">
+                                    <li> <span class="title">Phone</span> <span class="value">+91-8986369752</span>
+                                    </li>
+                                    <li> <span class="title">Address</span> <span class="value">Saharsa,Bihar</span>
+                                    </li>
+                                    <li> <span class="title">Hobby</span> <span class="value">Coding , Cloning the
+                                            Popular Websites
+                                            ,MotorCycle Riding, Cooking , Visiting new places and Living in new
+                                            cultures</span>
+                                    </li>
+                                </ul>
+                            </div> -->
+
+
+                        </div>
+
+
+
+                        <a href="https://www.google.com/maps/place/Ramesh+Jha+Mahila+College,+Bir+Kuwar+singh+Chowkr,,+Naya+Bazar,+Saharsa,+Bihar+852202/@25.8836398,86.5879271,17z/data=!3m1!4b1!4m5!3m4!1s0x39ee3df2ae9c5b27:0xe2f5171d286b9897!8m2!3d25.8834414!4d86.5903795"><button
+                                class="btn btn-warning col-sm-12 col-lg-4 my-2">Map Location <i class="fas fa-map"></i></button></a>
+                        <!-- <a href="Documents/Aman's Resume (1).pdf"><button
+                                class="btn btn-success col-sm-12 col-lg-4 my-2  ">View
+                                Resume <i class=" fas fa-eye"></i></button></a> -->
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Skill Part starting -->
+    <a name="Skills"></a>
+    <div id="skills-bd" class="skills-area section-padding pt-5 pb-5">
+        <div class="container">
+            <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img class="d-block w-100" src="Images\banner-biryani-masala-1.jpg" alt="First slide">
+                  </div>
+                  <div class="carousel-item">
+                    <img class="d-block w-100" src="Images\banner-biryani-masala-1.jpg" alt="Second slide">
+                  </div>
+                  <div class="carousel-item">
+                    <img class="d-block w-100" src="Images\Hyderabadi-Biryani.jpg" alt="Third slide">
+                  </div>
+                </div>
+                <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Next</span>
+                </a>
+              </div>
+        </div>
+    </div>
+
+    <!-- Projects part -->
+    <!-- <a name="projects"></a>
+
+
+
+
+
+
+    <div class="row">
+        <h2 class=" text-dark pt-5" style=" margin-left: 45%;">MY
+            <swap class="text-primary">PROJECTS</swap>
+        </h2>
+    </div>
+    <!-- ttesting -->
+    <div class="container">
+        <div class="row">
+            <!-- <div class="col-xs-12 col-sm-12 col-md-6 col-lg-4">
+                &nbsp
+            </div> -->
+            <!-- FIRST -->
+              <div class="col-xs-12 col-sm-12 col-md-6 col-lg-4">
+                <div class="productCardContainer">
+                  <div class="productCardContent">
+                    <div class="productCardImage">
+                      <img src="Images\dumB.jpg" alt="" />
+                      <a href="" class="imageCardEffect">Product</a>
+                    </div>
+                    <div class="productCardDetails">
+                      <div class="productCardModel">
+                        <span class="modelCardEffect"></span>
+                        <a href="">
+                          Dum Biryani
+                          <span>Price: Rs. 400/kg</span>
+                        </a>
+                      </div>
+                      <div class="productCardDetailsList">
+                        <div class="list-group">
+                          <div href="" class="list-group-item">
+                            <span class="detailIcon">
+                              <i class="fa fa-dot-circle-o"></i>
+                            </span>
+                            <span class="detailInfo">
+                                Thinly slice the onions , apply salt , keep aside for 10 minutes, squeeze out the water completely and deep fry them in oil till golden brown in colour and crisp
+                            </span>
+                        </div>
+                        </div>
+                      </div>
+                      <div class="productCardPrice">
+                        <a href="" class="btn">
+                          <i class="fa fa-info"></i> More Details
+                        </a>
+                        <button class="btn addToCart">
+                          <i class="fa fa-shopping-cart"></i> Add to Cart
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- 2 -->
+              <div class="col-xs-12 col-sm-12 col-md-6 col-lg-4">
+                <div class="productCardContainer">
+                  <div class="productCardContent">
+                    <div class="productCardImage">
+                      <img src="Images\kebab1.jpg" alt="" />
+                      <a href="" class="imageCardEffect">Product</a>
+                    </div>
+                    <div class="productCardDetails">
+                      <div class="productCardModel">
+                        <span class="modelCardEffect"></span>
+                        <a href="">
+                         Kebab 
+                          <span>Price: 450/plate</span>
+                        </a>
+                      </div>
+                      <div class="productCardDetailsList">
+                        <div class="list-group">
+                          <div href="" class="list-group-item">
+                            <span class="detailIcon">
+                              <i class="fa fa-dot-circle-o"></i>
+                            </span>
+                            <span class="detailInfo">
+                             Kebabs are various cooked meat dishes, with their origins in Middle Eastern cuisine. Many variants are popular around the world.
+                            </span>
+                        </div>
+                        </div>
+                      </div>
+                      <div class="productCardPrice">
+                        <a href="" class="btn">
+                          <i class="fa fa-info"></i> More Details
+                        </a>
+                        <button class="btn addToCart">
+                          <i class="fa fa-shopping-cart"></i> Add to Cart
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- 3 -->
+              <div class="col-xs-12 col-sm-12 col-md-6 col-lg-4">
+                <div class="productCardContainer">
+                  <div class="productCardContent">
+                    <div class="productCardImage">
+                      <img src="Images\moms1.jpg" alt="" />
+                      <a href="" class="imageCardEffect">Product</a>
+                    </div>
+                    <div class="productCardDetails">
+                      <div class="productCardModel">
+                        <span class="modelCardEffect"></span>
+                        <a href="">
+                          Chicken Momos
+                          <span>Price: Rs.120/plate</span>
+                        </a>
+                      </div>
+                      <div class="productCardDetailsList">
+                        <div class="list-group">
+                          <div href="" class="list-group-item">
+                            <span class="detailIcon">
+                              <i class="fa fa-dot-circle-o"></i>
+                            </span>
+                            <span class="detailInfo">
+                                plate of hot chicken momos and the rains outside your window –
+                                 this is a combination to die for!, momos taste delicious when
+                                   paired with a spicy sauce
+                            </span>
+                        </div>
+                        </div>
+                      </div>
+                      <div class="productCardPrice">
+                        <a href="" class="btn">
+                          <i class="fa fa-info"></i> More Details
+                        </a>
+                        <button class="btn addToCart">
+                          <i class="fa fa-shopping-cart"></i> Add to Cart
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            <!-- six end here -->
+
+
+        </div>
+    </div>
+
+
+
+
+
+    <!-- erdfv njks -->
+
+    </div> -->
+
+    <!-- Statistic area ends -->
+
+    <div class="footer-area">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-center">
+                    <p>&copy; 2020 All Right Reserved By <a href="https://github.com/amananku26" target="_blank">Biryani Heaven Pvt. Lmt.</a></p>
+                </div>
+                <!-- <div class="social-media">
+                    <ul>
+                        <a href="https://www.linkedin.com/in/amananku26/">
+                            <li><img src="..\social_media\linkedin.png" alt="linkdin"></li>
+                        </a>
+                        <a href="https://twitter.com/amananku26">
+                            <li><img src="..\social_media\twitter.png" alt="twitter"></li>
+                        </a>
+                        <a href="https://www.hackerrank.com/amananku26">
+                            <li><img src="..\social_media\HackerRank.png" alt="Hackerrank" class="rounded"></li>
+                        </a>
+                        <a href="https://github.com/amananku26">
+                            <li><img src="..\social_media\github.png" alt="github" class="rounded"></li>
+                        </a>
+                    </ul>
+                </div> -->
+            </div>
+        </div>
+    </div>
+
+    <!--Footer Area Ends-->
+
+
+
+    <script src="https://kit.fontawesome.com/74e6adde73.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
