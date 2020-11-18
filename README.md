@@ -1,1 +1,1 @@
-# biryani-heaven
+[![Netlify Status](https://api.netlify.com/api/v1/badges/334ae415-daea-4e0d-a004-77395da52b12/deploy-status)](https://app.netlify.com/sites/admiring-wilson-790fc4/deploys)
