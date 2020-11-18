@@ -94,7 +94,7 @@ ul li.active a{
     list-style: none;
   }
   
-  .social-media ul li{
+  /* .social-media ul li{
     display: inline-block;
     cursor: pointer;
     margin: 25px 15px;
@@ -103,7 +103,7 @@ ul li.active a{
   .social-media img{
     width: 40px;
     height: 40px;
-  }
+  } */
 
 /*---------- 6. About area css starts---------------*/
 
